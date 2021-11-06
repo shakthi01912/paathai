@@ -41,7 +41,7 @@ function changePassword(Request $request){
       
      if (!$userRow || !Hash::check($request->oldPassword, $userRow->password)) {
          return response([
-             'message' => ['Id or password is wrong']
+             'message' => ['Id or Password is wrong']
          ], 404);
      }
      
